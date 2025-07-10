@@ -1,0 +1,37 @@
+.order-detail-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: flex-start; }
+.order-items-panel h3 { font-size: 1.5rem; margin-bottom: 20px; }
+.summary-card { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e9ecef; margin-bottom: 25px; }
+.summary-card h3 { font-size: 1.3rem; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.summary-card p { margin: 0 0 10px 0; color: #495057; }
+.summary-card p strong { color: #2c3e50; }
+.summary-card .total-price { font-size: 1.2rem; font-weight: bold; }
+@media (max-width: 992px) { .order-detail-layout { grid-template-columns: 1fr; } }
+
+.change-status-form {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.change-status-form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.status-update-action {
+    display: flex;
+    gap: 10px;
+}
+
+.status-update-action select {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.status-update-action .button-small {
+    flex-shrink: 0;
+}

@@ -1,0 +1,108 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.order-detail-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.order-items-panel h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+.order-items-panel .data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.order-items-panel .data-table th,
+.order-items-panel .data-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+    vertical-align: middle;
+}
+.order-items-panel .data-table th {
+    background-color: #f7f7f7;
+    font-weight: 600;
+}
+.order-items-panel .product-image-cell {
+    width: 80px;
+}
+.order-items-panel .product-list-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.order-summary-panel {
+    position: sticky;
+    top: 120px;
+}
+.summary-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #e9ecef;
+    margin-bottom: 25px;
+}
+.summary-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.summary-card p {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+.summary-card p:last-child {
+    margin-bottom: 0;
+}
+.summary-card p strong {
+    display: block;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 3px;
+}
+.summary-card .total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--brand-color);
+}
+
+.status-badge.status-pendiente-de-pago { background-color: #ffc107; color: #333; }
+.status-badge.status-procesando { background-color: #17a2b8; color: #fff; }
+.status-badge.status-enviado { background-color: #007bff; color: #fff; }
+.status-badge.status-completado { background-color: #28a745; color: #fff; }
+.status-badge.status-cancelado,
+.status-badge.status-reembolsado { background-color: #6c757d; color: #fff; }
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+@media (max-width: 992px) {
+    .order-detail-layout {
+        grid-template-columns: 1fr;
+    }
+    .order-summary-panel {
+        position: static;
+    }
+}

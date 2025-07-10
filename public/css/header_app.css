@@ -1,0 +1,130 @@
+#app-header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#app-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#app-header .branding a {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+}
+#app-header .branding .logo-text {
+    color: #007bff;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.action-icon {
+    position: relative;
+    color: #495057;
+}
+.action-icon svg {
+    width: 26px;
+    height: 26px;
+    transition: color 0.2s ease;
+}
+.action-icon:hover {
+    color: #007bff;
+}
+
+.cart-counter {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 15px;
+    margin-bottom: -15px; 
+}
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    margin-right: 10px;
+}
+.user-profile .user-name {
+    font-weight: 600;
+    color: #343a40;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    right: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    min-width: 200px;
+    overflow: hidden;
+    z-index: 1001;
+    padding-top: 5px; 
+}
+.user-profile:hover .user-dropdown {
+    display: block;
+}
+.user-dropdown a {
+    display: block;
+    padding: 12px 20px;
+    color: #343a40;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+.user-dropdown a:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+.user-dropdown a.logout {
+    color: #dc3545;
+    border-top: 1px solid #e9ecef;
+}
+.user-dropdown a.logout:hover {
+    background-color: #f8d7da;
+}
+.user-dropdown a.pedidos {
+    color: #3578dc;
+    border-top: 1px solid #e9ecef;
+}
+.user-dropdown a.pedidos:hover {
+    background-color: #edf0ff;
+}
+.user-dropdown a.perfil {
+    color: #3578dc;
+    border-top: 1px solid #e9ecef;
+}
+.user-dropdown a.perfil:hover {
+    background-color: #edf0ff;
+}
